@@ -13,11 +13,11 @@ void Argument::parse_type_from_args() {
   } else if (argc == 2) {
     type = INPUT_FILE;
   } else if (argc == 3) {
-    type = FLAG;
+    type = WITH_FLAG_S;
   } else if (argc == 4) {
-    type = SHIFT;
+    type = WITH_SHIFT;
   } else if (argc == 5) {
-    type = FLAG;
+    type = WITH_FLAG_O;
   } else if (argc == 6) {
     type = OUTPUT_FILE;
   }

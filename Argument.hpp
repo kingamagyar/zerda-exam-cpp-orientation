@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-enum ArgType {NONE, INPUT_FILE, FLAG, SHIFT, OUTPUT_FILE};
+enum ArgType {NONE, INPUT_FILE, WITH_FLAG_S, WITH_SHIFT, WITH_FLAG_O, OUTPUT_FILE};
 const int FLAG1_ARG_INDEX = 3;
 const int FLAG2_ARG_INDEX = 5;
 const int CHAR_INDEX = 1;

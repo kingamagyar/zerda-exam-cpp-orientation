@@ -2,17 +2,17 @@
 #define CaesarsCipher_hpp
 
 #include <vector>
-#include "Command.hpp"
 #include "Argument.hpp"
 #include "Decryption.hpp"
 #include "File.hpp"
 
 class CaesarsCipher {
 private:
-  std::vector<Command*> commands;
+  std::string input_file_name;
+protected:
+  File file;
 public:
   CaesarsCipher();
-  ~CaesarsCipher();
   void run(int argc, char** argv);
 };
 
