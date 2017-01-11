@@ -2,7 +2,6 @@
 
 #include "Catch.hpp"
 #include "Decryption.hpp"
-#include "File.hpp"
 
 TEST_CASE("Decrypts string by 3") {
   std::string str = "abcd";
@@ -31,10 +30,3 @@ TEST_CASE("Decrypts string by 2, keeping capital letters, spaces and numbers int
   Decryption d;
   REQUIRE(d.decrypt(str, shift) == "CdeF G 2");
 }
-
-TEST_CASE("Throws error when input file cannot be opened") {
-  File f;
-  REQUIRE_THROWS(f.read_in_file());
-}
-
-
